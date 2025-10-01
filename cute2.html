@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>am i cute?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background: pink; /* plain pink background */
+    }
+    h1 {
+      font-size: 2em;
+      color: #ff1a75;
+      text-shadow: 1px 1px 2px white;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 1.2em;
+      margin: 15px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+    #yesBtn {
+      background: #ff4da6;
+      color: white;
+    }
+    #yesBtn:hover {
+      background: #ff1a75;
+      transform: scale(1.1);
+    }
+    #noBtn {
+      background: #cccccc;
+      color: black;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>am i cute? 🥺💖</h1>
+  <button id="yesBtn">yes 😍</button>
+  <button id="noBtn">no 😒</button>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+    const yesBtn = document.getElementById("yesBtn");
+
+    yesBtn.onclick = () => {
+      alert("thank u giyacute i appreciate u 💖🌸");
+    };
+
+    noBtn.onmouseover = () => {
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 50));
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+    };
+  </script>
+</body>
+</html>
